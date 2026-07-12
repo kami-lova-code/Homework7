@@ -3,10 +3,10 @@
 public class Main {
     public static void main(String[] args) {
 
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
-        for (int g = 10; g >= 0; g--) {
+        for (int g = 10; g >= 1; g--) {
             System.out.println(g);
         }
 
@@ -17,8 +17,8 @@ public class Main {
             System.out.println(z);
         }
 
-        for (int v = 1904; v < 2096; v = v + 4) {
-            System.out.println(v + " год является високосным. ");
+        for (int v = 1904; v <= 2096; v = v + 4) {
+            System.out.println(v + " год является високосным ");
         }
 
         for (int q = 7; q <= 98; q = q + 7) {
@@ -44,7 +44,7 @@ public class Main {
         int totalOne = 0;
         for (int u = 1; u <= 12; u++) {
             totalOne += incomePerMonth;
-            totalOne += incomePerMonth * 0.01;
+            totalOne += totalOne * 0.01;
             System.out.println("Месяц " + u + " сумма накоплений равна " + totalOne);
         }
 
